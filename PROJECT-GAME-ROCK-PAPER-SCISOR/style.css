@@ -1,0 +1,148 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Times New Roman', Times, serif;
+list-style: none;
+text-align: center;
+}
+
+body{
+width: 100%;
+height: 100vh;
+background: url(https://c4.wallpaperflare.com/wallpaper/906/415/604/texture-wood-monochrome-gray-wallpaper-thumb.jpg);
+background-size: cover;
+}
+
+h1{
+background-color: rgba(151, 149, 134, 0.5);
+color: rgba(255, 255, 255, 0.5);
+height: 5rem;
+line-height: 5rem;
+border-bottom: 1px solid rgba(248, 211, 7, 0.5);
+box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+
+}
+
+.choice{
+height:200px;
+width: 200px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+border: 5px solid rgba(105, 101, 101, 0.5);
+
+}
+
+.choice:hover{
+opacity: 0.5;
+cursor: pointer;
+background-color: rgba(238, 238, 191, 0.5);
+}
+
+img{
+height: 180px;
+width: 180px;
+object-fit: cover;
+border-radius: 50%;
+}
+
+.choices{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 3rem;
+margin-top: 3rem;  
+}
+
+.score-board{
+display: flex;
+justify-content: center;
+align-items:center;
+font-size: 3rem;
+text-shadow: 4px 4px 2px rgba(133, 131, 44, 0.6);
+color: rgba(255, 255, 255, 0.5);
+margin-top: 5rem;
+gap: 5rem;
+}
+
+#user-score, #comp-score{
+font-size: 4rem;
+
+}
+.msg-container{
+margin-top: 4rem;
+
+}
+
+#msg{
+background-color: rgba(255, 255, 255, 0.5);
+font-size: 2rem;
+font-style: italic;
+text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+display: inline;
+border: ;
+border-radius: 5px;
+border: 5px solid rgba(105, 101, 101, 0.5);
+padding: 1rem;
+}
+
+#msg:hover{
+opacity: 0.5;
+cursor: pointer;
+background-color: rgba(238, 238, 191, 0.5);
+    
+}
+/*mobile media query started*/
+@media(max-width:320px) {
+body{
+background-position: -15rem;
+}
+
+h1{
+height: 3rem;
+line-height: 3rem;
+font-size: 18px;
+}        
+img{
+height: 70px;
+width: 70px;
+
+}
+.choice{
+height:80px;
+width: 80px;
+margin-top: -1rem;
+}           
+.choices{
+gap: 1rem;
+}
+#msg{
+font-size: 1.5rem;
+padding: 1rem;
+
+}
+.score-board{
+font-size: 2.5rem;
+margin-top: 5rem;
+gap: 1.5rem;
+}
+    
+#user-score, #comp-score{
+font-size: 3rem;
+}
+
+.msg-container{
+font-size: 10px;
+margin-top: 6rem;
+}
+
+#msg{
+font-size: 1.2rem;
+color: rgb(230, 218, 218);
+}
+}
+
+/*mobile media query ended*/
